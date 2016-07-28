@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		 <title>Drawing App</title>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=0.5">
+		 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+		 <link rel="stylesheet" href="custom.css" />
+		 <script src="socket.io/socket.io.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		 <script src="client.js"></script>
+   </head>
+
+   <body>
+	  <canvas id="drawing"></canvas>
+
+	  <!-- Tool menu -->
+    <div id="toolMenuContainer">
+
+			<div class="well well-sm" id="toolMenu">
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<form>
+							<div class="form-group">
+								<label for="colorSelect">Color</label>
+								<input type="color" class="form-control" id="colorSelect" placeholder="#FFFFFF">
+							</div>
+						</form>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<form>
+							<div class="form-group">
+								<label for="weightSelect">Weight</label>
+								<input type="number" class="form-control" id="weightSelect" min="1" max="99" value="3">
+							</div>
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+
+			<button type="button" class="btn btn-default btn-xs" id="hideToolMenu"><</button>
+		</div>
+
+
+		<!-- Chat Window -->
+		<div id="chatWindowContainer">
+
+			<div id="hideChatWindowContainer">
+				<button type="button" class="btn btn-default" id="hideChatWindow">Messages</button>
+			</div>
+
+			<div class="well well-lg" id="chatUsers">
+				<ul id="users"></ul>
+			</div>
+
+			<div class="well well-lg" id="chatBox">
+				<ul id="messages"></ul>
+			</div>
+
+			<form id="chatInput" action="">
+				<div class="form-group" id="messageInputDiv">
+					<input id="messageInput">
+				</div>
+			</form>
+
+		</div>
+
+	  
+	  
+      
+	  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+   </body>
+</html>

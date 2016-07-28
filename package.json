@@ -1,0 +1,11 @@
+{
+	"name" : "MiniDoodle",
+	"description" : "Collaborative drawing canvas",
+	"author" : "cum",
+	"dependencies" : {
+		"express" : "4.x",
+		"socket.io" : "*",
+		"bootstrap" : "*",
+		"jquery" : "*"
+	}
+}
